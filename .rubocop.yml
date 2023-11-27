@@ -1,0 +1,42 @@
+AllCops:
+  NewCops: disable
+
+Metrics/MethodLength:
+  Exclude:
+    - "lambda.rb"
+    - "app/helpers/slack_block.rb"
+
+Metrics/AbcSize:
+  Exclude:
+    - "lambda.rb"
+    - "app/helpers/slack_block.rb"
+    - "app/services/alert_service.rb"
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/spec_helper.rb"
+    - "spec/services/alert_filter_spec.rb"
+    - "spec/requests/events_controller_spec.rb"
+    - "spec/requests/alerts_controller_spec.rb"
+    - "spec/factories/alert.rb"
+   
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - "lambda.rb"
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - "lambda.rb"
+
+Layout/LineLength:
+  Exclude:
+    - "spec/factories/alert.rb"
+
+Lint/UnusedMethodArgument:
+  Exclude:
+    - "lambda.rb"
+
+Style/GlobalVars:
+  Exclude:
+    - "lambda.rb"
